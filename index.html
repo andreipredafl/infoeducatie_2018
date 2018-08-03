@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>TaskManager for Coders</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    <style>
+        .btn, .form-control {
+            border-radius: 0px;
+        }
+
+        body {
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.95);
+        }
+
+        .scroll1::-webkit-scrollbar {
+            width: 10px;
+        }
+    </style>
+
+</head>
+<body style="width: 500px; height: 600px;">
+
+<div class="container">
+    <div class="row">
+        <div class="input-group">
+            <input type="text" id="search-text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn btn-default" id="search-button-text" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label><i style='color: white; font-size: 20px' class='fab fa-stack-overflow'></i></label>&nbsp;
+            <input checked type="radio" id="stack-checkbox-search-text" name="search-engine">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label><i style='color: white; font-size: 20px' class='fab fa-google'></i></label>&nbsp;
+            <input type="radio" id="google-checkbox-search-text" name="search-engine">
+        </div>
+    </div>
+    <div class="row">
+        <hr style="border:1px solid black;">
+        <div class="col-md-12 scroll scroll1" style="height: 310px; overflow-y: scroll" id="projects"></div>
+    </div>
+    <div class="row" style="top: 15px; position: relative">
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" id="project_name" class="form-control" placeholder="Name of project...">
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <button class="btn btn-success" id="add-new-project">+ Add Project</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
